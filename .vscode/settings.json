@@ -1,0 +1,33 @@
+{
+    // Ruler
+    "editor.rulers": [
+        70,
+        80
+    ],
+    // python path
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    // black
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+    // flake8
+    "python.linting.lintOnSave": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    // pyproject-flack8 specify pflake8
+    "python.linting.flake8Path": "${workspaceFolder}/.venv/bin/pflake8",
+    // mypy
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
+    // isort nedd extends:ms-python.isort
+    "isort.path": [
+        "${workspaceFolder}/.venv/bin/isort"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "python.analysis.typeCheckingMode": "basic",
+}
