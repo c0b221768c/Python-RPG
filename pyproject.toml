@@ -6,7 +6,7 @@ authors = [
     { name = "c0b221768c", email = "c0b221768c@edu.teu.ac.jp" }
 ]
 dependencies = [
-    "click>=8.1.6",
+    "inquirerpy>=0.3.4",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -17,7 +17,6 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev_dependencies = []
 dev-dependencies = [
     "black>=23.7.0",
     "flake8>=5.0.4",
@@ -32,10 +31,10 @@ allow-direct-references = true
 # Detailed settings for each formatter and linter below
 [tool.black]
 # max-line-length = 120
-line-length = 120
+line-length = 110
 
 [tool.flake8]
-max-line-length = 120
+max-line-length = 110
 # ignore list
 extend-ignore = ["E203", "W503"]
 
